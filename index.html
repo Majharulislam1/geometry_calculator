@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Geometry Calculator</title>
+</head>
+<body>
+    
+
+      <header class="container">
+           <div class="header">
+               <div class="nav-text">
+                    <h2>Interactive</h2>
+                    <h4>Geometry Genius</h4>
+               </div>
+               <div class="nav-button">
+                   <button>Blog</button>
+               </div>
+           </div>
+      </header>
+
+       <div class="divider">
+       </div>
+      <main>
+         <div class="container main_section">
+               <div class="components_grid">
+                      <div class="grid_cart">
+                           <div class="cart_img">
+                              <img src="./images/triangle.png" alt="">
+                           </div>
+                           <div class="cart_text">
+                              <h3>Triangle</h3>
+                              <p>Area(A) = 0.5 * b * h</p>
+                              <input id="tri_base" type="text"  placeholder="b" required>
+                               <span>cm</span>
+                              <input id="tri_height" type="text"  placeholder="h" required>
+                              <span>cm</span>
+                           </div>
+                           <div class="cart_button">
+                                <button onclick="triangle_cal()">Calculator</button>
+                           </div>
+                      </div>
+                      <div class="grid_cart">
+                           <div class="cart_img">
+                              <img src="./images/rectangle.png" alt="">
+                           </div>
+                           <div class="cart_text">
+                              <h3>Rectangle</h3>
+                              <p>Area(A) = W * l</p>
+                              <input type="text" id="rec_width"  placeholder="w">
+                               <span>cm</span>
+                              <input type="text" id="rec_height" placeholder="l">
+                              <span>cm</span>
+                           </div>
+                           <div class="cart_button">
+                                <button onclick="rectangle_cal()">Calculator</button>
+                           </div>
+                      </div>
+                      <div class="grid_cart">
+                           <div class="cart_img">
+                              <img src="./images/parallelogram.png" alt="">
+                           </div>
+                           <div class="cart_text">
+                              <h3>Parallelogram</h3>
+                              <p>Area(A) =b * h</p>
+                              <input type="text" id="para_base"  placeholder="b">
+                               <span>cm</span>
+                              <input type="text" id="para_height"  placeholder="h">
+                              <span>cm</span>
+                           </div>
+                           <div class="cart_button">
+                                <button onclick="parallelogram()">Calculator</button>
+                           </div>
+                      </div>
+                      <div class="grid_cart">
+                           <div class="cart_img">
+                              <img src="./images/rhombus.png" alt="">
+                           </div>
+                           <div class="cart_text">
+                              <h3>Rhombus</h3>
+                              <p>Area(A) = 0.5 * d<sub>1</sub> * d<sub>2</sub></p>
+                              <input type="text" id="rhom_d1"  placeholder="d1">
+                               <span>cm</span>
+                              <input type="text" id="rhom_d2"  placeholder="d2">
+                              <span>cm</span>
+                           </div>
+                           <div class="cart_button">
+                                <button onclick="rhombus()">Calculator</button>
+                           </div>
+                      </div>
+                      <div class="grid_cart">
+                           <div class="cart_img">
+                              <img src="./images/pentagon.png" alt="">
+                           </div>
+                           <div class="cart_text">
+                              <h3>Pentagon</h3>
+                              <p>Area(A) = 0.5 * p * b</p>
+                              <input type="text" id="penta_p"  placeholder="p">
+                               <span>cm</span>
+                              <input type="text" id="penta_b"  placeholder="b">
+                              <span>cm</span>
+                           </div>
+                           <div class="cart_button">
+                                <button onclick="pentagon()">Calculator</button>
+                           </div>
+                      </div>
+                      <div class="grid_cart">
+                           <div class="cart_img">
+                              <img src="./images/ellipse.png" alt="">
+                           </div>
+                           <div class="cart_text">
+                              <h3>Ellipse</h3>
+                              <p>Area(A) = &#x1D6D1 ab</p>
+                              <input type="text" id="ellip_a"  placeholder="a">
+                               <span>cm</span>
+                              <input type="text" id="ellip_b"  placeholder="b">
+                              <span>cm</span>
+                           </div>
+                           <div class="cart_button">
+                                <button onclick="ellipse()">Calculator</button>
+                           </div>
+                      </div>
+               </div>
+               <div class="result">
+                     <div class="result_cart">
+                           <div class="result_title">
+                               <p>Area Calculation</p>
+                           </div>
+                           <div class="result_showing" id="result_showing">
+                                
+                           </div>
+                     </div>
+               </div>
+         </div>
+
+      </main>
+
+
+
+      <footer></footer>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
